@@ -29,57 +29,62 @@ scissors = """
 
 user_val = input('Enter 0 for Rock 1 for Paper and 2 for Scissors')
 comp_val = random.randint(0, 2)
-if int(user_val) == 0 and comp_val == 0:
-    print('You chose')
-    print(rock)
-    print('Computer chose')
-    print(rock)
-    print('Tie')
-elif int(user_val) == 0 and comp_val == 1:
-    print('You chose')
-    print(rock)
-    print('Computer chose')
-    print(paper)
-    print('Computer Wins!!')
-elif int(user_val) == 0 and comp_val == 2:
-    print('You chose')
-    print(rock)
-    print('Computer chose')
-    print(scissors)
-    print('You Win!!')
-elif int(user_val) == 1 and comp_val == 1:
-    print('You chose')
-    print(paper)
-    print('Computer chose')
-    print(paper)
-    print('Tie')
-elif int(user_val) == 1 and comp_val == 0:
-    print('You chose')
-    print(paper)
-    print('Computer chose')
-    print(rock)
-    print('You Win!!')
-elif int(user_val) == 1 and comp_val == 2:
-    print('You chose')
-    print(paper)
-    print('Computer chose')
-    print(scissors)
-    print('Computer Wins!!')
-elif int(user_val) == 2 and comp_val == 2:
-    print('You chose')
-    print(scissors)
-    print('Computer chose')
-    print(scissors)
-    print('Tie')
-elif int(user_val) == 2 and comp_val == 1:
-    print('You chose')
-    print(scissors)
-    print('Computer chose')
-    print(paper)
-    print('You Win!!')
-elif int(user_val) == 2 and comp_val == 0:
-    print('You chose')
-    print(scissors)
-    print('Computer chose')
-    print(rock)
-    print('Computer Wins!!')
+try:
+    if int(user_val) == 0 and comp_val == 0:
+        print('You chose')
+        print(rock)
+        print('Computer chose')
+        print(rock)
+        print('Tie')
+    elif int(user_val) == 0 and comp_val == 1:
+        print('You chose')
+        print(rock)
+        print('Computer chose')
+        print(paper)
+        print('Computer Wins!!')
+    elif int(user_val) == 0 and comp_val == 2:
+        print('You chose')
+        print(rock)
+        print('Computer chose')
+        print(scissors)
+        print('You Win!!')
+    elif int(user_val) == 1 and comp_val == 1:
+        print('You chose')
+        print(paper)
+        print('Computer chose')
+        print(paper)
+        print('Tie')
+    elif int(user_val) == 1 and comp_val == 0:
+        print('You chose')
+        print(paper)
+        print('Computer chose')
+        print(rock)
+        print('You Win!!')
+    elif int(user_val) == 1 and comp_val == 2:
+        print('You chose')
+        print(paper)
+        print('Computer chose')
+        print(scissors)
+        print('Computer Wins!!')
+    elif int(user_val) == 2 and comp_val == 2:
+        print('You chose')
+        print(scissors)
+        print('Computer chose')
+        print(scissors)
+        print('Tie')
+    elif int(user_val) == 2 and comp_val == 1:
+        print('You chose')
+        print(scissors)
+        print('Computer chose')
+        print(paper)
+        print('You Win!!')
+    elif int(user_val) == 2 and comp_val == 0:
+        print('You chose')
+        print(scissors)
+        print('Computer chose')
+        print(rock)
+        print('Computer Wins!!')
+    else:
+        print('Enter valid value')
+except ValueError:
+    print('Enter valid input and retry')
